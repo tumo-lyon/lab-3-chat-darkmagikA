@@ -16,8 +16,8 @@ const typingUsers = new Set()
 
 io.on('connection', (socket) => {
 
-  if (socket.conn.remoteAdress === "10.21.38.43") {socket.disconnect()}
-  if (socket.conn.remoteAdress === "10.21.38.44") {socket.disconnect()}
+  if (socket.conn.remoteAdress === "::ffff:10.21.38.43") {socket.disconnect()}
+  if (socket.conn.remoteAdress === "::ffff:10.21.38.44") {socket.disconnect()}
   console.log('a user connected');
 
   io.emit("system_message", {
